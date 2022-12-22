@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Geulrara Calli 핸드라이팅 애니메이션</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <style>
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #fff;
+    }
+
+    #LIRIKOS-1,
+    #LIRIKOS-2,
+    #LIRIKOS-3,
+    #LIRIKOS-4,
+    #LIRIKOS-5,
+    #LIRIKOS-6,
+    #LIRIKOS-7 {
+    fill: none;
+    stroke: #5b69e7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    }
+
+    #LIRIKOS-1 {
+    stroke-width: 34;
+    -webkit-animation: hand-writing 1s linear forwards 0.1s;
+            animation: hand-writing 1s linear forwards 0.1s;
+    }
+
+    #LIRIKOS-2 {
+    stroke-width: 34;
+    -webkit-animation: hand-writing 1s linear forwards 0.41s;
+            animation: hand-writing 1s linear forwards 0.41s;
+    }
+
+    #LIRIKOS-3 {
+    stroke-width: 31;
+    -webkit-animation: hand-writing 1s linear forwards 0.41s;
+            animation: hand-writing 1s linear forwards 0.41s;
+    }
+
+    #LIRIKOS-4 {
+    stroke-width: 31;
+    -webkit-animation: hand-writing 1s linear forwards 0.41s;
+            animation: hand-writing 1s linear forwards 0.41s;
+    }
+
+    #LIRIKOS-5 {
+    stroke-width: 31;
+    -webkit-animation: hand-writing 1s linear forwards 0.41s;
+            animation: hand-writing 1s linear forwards 0.41s;
+    }
+
+    #LIRIKOS-6 {
+    stroke-width: 31;
+    -webkit-animation: hand-writing 1s linear forwards 0.41s;
+            animation: hand-writing 1s linear forwards 0.41s;
+    }
+
+    #LIRIKOS-7 {
+    stroke-width: 31;
+    -webkit-animation: hand-writing 1s linear forwards 0.41s;
+            animation: hand-writing 1s linear forwards 0.41s;
+    }
+
+    #calli-path-1,
+    #calli-path-2,
+    #calli-path-3,
+    #calli-path-4,
+    #calli-path-5 {
+    fill: none;
+    stroke: #5b69e7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    }
+
+    #calli-path-1 {
+    stroke-width: 2;
+    -webkit-animation: hand-writing 0.45s linear forwards 1.8s;
+            animation: hand-writing 0.45s linear forwards 1.8s;
+    }
+
+    #calli-path-2 {
+    stroke-width: 2;
+    -webkit-animation: hand-writing 0.45s linear forwards 1.9s;
+            animation: hand-writing 0.45s linear forwards 1.9s;
+    }
+
+    #calli-path-3 {
+    stroke-width: 2;
+    -webkit-animation: hand-writing 0.45s linear forwards 1.9s;
+            animation: hand-writing 0.45s linear forwards 1.9s;
+    }
+
+    #calli-path-4 {
+    stroke-width: 2;
+    -webkit-animation: hand-writing 0.45s linear forwards 2s;
+            animation: hand-writing 0.45s linear forwards 2s;
+    }
+
+    #calli-path-5 {
+    stroke-width: 2;
+    -webkit-animation: hand-writing 0.45s linear forwards 2.1s;
+            animation: hand-writing 0.45s linear forwards 2.1s;
+    }
+
+    #heart-path {
+    fill: none;
+    stroke: #5b69e7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1000;
+    stroke-dashoffset:1000;
+    stroke-width: 10;
+    -webkit-animation: hand-writing 5.8s linear forwards 2.3s;
+            animation: hand-writing 5.8s linear forwards 2.3s;
+    }
+
+    @-webkit-keyframes hand-writing {
+    100% {
+      stroke-dashoffset: 0;
+    }
+    }
+
+    @keyframes hand-writing {
+    100% {
+      stroke-dashoffset: 0;
+    }
+    }
+  </style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<svg id="brand-geulrara-calli" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+  <clipPath id="mask">
+    <path id="LIRIKOS-1" d="M145.139,148.083h13.764v95.08h45.563v11.548h-59.326V148.083z"/>
+  	<path id="LIRIKOS-2" d="M233.568,148.083v106.628h-13.764V148.083H233.568z"/>
+  	<path id="LIRIKOS-3" d="M257.613,149.506c6.961-1.424,16.928-2.215,26.42-2.215c14.713,0,24.205,2.689,30.85,8.701
+  		c5.379,4.746,8.385,12.023,8.385,20.25c0,14.08-8.859,23.414-20.092,27.211v0.475c8.227,2.848,13.131,10.441,15.662,21.516
+  		c3.48,14.871,6.012,25.154,8.227,29.267h-14.238c-1.74-3.006-4.113-12.181-7.119-25.47c-3.164-14.713-8.859-20.25-21.357-20.725
+  		h-12.973v46.195h-13.764V149.506z M271.377,198.075h14.08c14.713,0,24.047-8.068,24.047-20.25c0-13.764-9.967-19.775-24.521-19.934
+  		c-6.645,0-11.391,0.633-13.605,1.266V198.075z"/>
+  	<path id="LIRIKOS-4" d="M356.485,148.083v106.628h-13.764V148.083H356.485z"/>
+  	<path id="LIRIKOS-5" d="M380.53,148.083h13.764v51.416h0.475c2.848-4.113,5.695-7.91,8.385-11.391l32.59-40.025h17.086
+  		l-38.602,45.246l41.607,61.382H439.54l-35.121-52.365l-10.125,11.707v40.658H380.53V148.083z"/>
+  	<path id="LIRIKOS-6" d="M554.707,200.29c0,36.703-22.307,56.162-49.518,56.162c-28.16,0-47.936-21.832-47.936-54.105
+  		c0-33.855,21.041-56.004,49.518-56.004C535.881,146.342,554.707,168.649,554.707,200.29z M471.967,202.03
+  		c0,22.781,12.34,43.189,34.014,43.189c21.832,0,34.172-20.092,34.172-44.297c0-21.199-11.074-43.348-34.014-43.348
+  		C483.357,157.575,471.967,178.616,471.967,202.03z"/>
+  	<path id="LIRIKOS-7" d="M570.68,237.942c6.17,3.797,15.188,6.961,24.68,6.961c14.08,0,22.307-7.436,22.307-18.193
+  		c0-9.967-5.695-15.662-20.092-21.199c-17.402-6.17-28.16-15.188-28.16-30.217c0-16.611,13.764-28.951,34.488-28.951
+  		c10.916,0,18.826,2.531,23.572,5.221l-3.797,11.232c-3.48-1.898-10.6-5.063-20.25-5.063c-14.555,0-20.092,8.701-20.092,15.979
+  		c0,9.967,6.486,14.871,21.199,20.566c18.035,6.961,27.211,15.662,27.211,31.324c0,16.453-12.182,30.691-37.336,30.691
+  		c-10.283,0-21.516-3.006-27.211-6.802L570.68,237.942z"/>
+  </clipPath>
+  </defs>
+  <g id="LIRIKOS" >
+    <g clip-path="url(#mask)">
+      <path id="LIRIKOS-1" fill="none" stroke="#000000" stroke-miterlimit="10" d="M204.465,254.711h-59.326V148.083"/>
+      <path id="LIRIKOS-2" fill="none" stroke="#000000" stroke-miterlimit="10" d="M219.805,254.711V148.083"/>
+      <path id="LIRIKOS-3" fill="none" stroke="#000000" stroke-miterlimit="10" d="M257.613,254.711V149.506
+        c6.961-1.424,16.928-2.215,26.42-2.215c14.713,0,24.205,2.689,30.85,8.701c5.379,4.746,8.385,12.023,8.385,20.25
+        c0,14.08-8.859,23.414-20.092,27.211v0.475c8.227,2.848,13.131,10.441,15.662,21.516c3.48,14.871,6.012,25.154,8.227,29.267
+        h-14.238c-1.74-3.006-4.113-12.181-7.119-25.47c-3.164-14.713-8.859-20.25-21.357-20.725"/>
+      <path id="LIRIKOS-4" fill="none" stroke="#000000" stroke-miterlimit="10" d="M342.722,254.711V148.083"/>
+      <path id="LIRIKOS-5" fill="none" stroke="#000000" stroke-miterlimit="10" d="M394.294,254.711 M394.294,148.083v51.416h0.475
+        c2.848-4.113,5.695-7.91,8.385-11.391l32.59-40.025h17.086l-38.602,45.246l41.607,61.382"/>
+      <path id="LIRIKOS-6" fill="none" stroke="#000000" stroke-miterlimit="10" d="M472.233,202.964C472,213,474,224,478.971,232.804
+        c1.182,2.209,2.521,4.341,4.025,6.38c1.504,2.038,3.171,3.982,5.004,5.816c12,11,32,12,42-2c1.7-2.5,3.23-5.12,4.583-7.829
+        c1.353-2.711,2.529-5.512,3.521-8.387C546,205,543,179,528,160c-8-9-22-13-33-7c-16,8-21,27-22.558,43.185
+        C472.293,198.434,472.223,200.695,472.233,202.964z"/>
+      <path id="LIRIKOS-7" fill="none" stroke="#000000" stroke-miterlimit="10" d="M571.884,239.074C581,248,595,250,608,248
+        c15-2,23-20,17-34c-8-15-26-16-39.997-20.987c-2.503-0.841-4.726-2.094-6.642-3.652c-9.584-7.778-11.528-23.195-2.361-32.361
+        c13-13,35-15,51.477-5.448"/>
+    </g>
+  </g>
+
+</svg>
+<!-- partial -->
+
+</body>
+</html>

@@ -1,0 +1,599 @@
+/* 공통영역 view more */
+
+main .view_btn a.more{
+    display: inline-block;
+    font-size: 13px;
+    margin: 50px 0 0 0;
+    font-weight: 600;
+    letter-spacing: .3px;
+    line-height:.5;
+    color: #000;
+   
+}
+
+main .view_btn a.more:hover .bg_icon i{    
+    animation: iconRoll 4s linear infinite;
+    opacity: 1;
+    
+}
+
+main .view_btn .arrow_icon{
+    width: 33px;
+    height: 2px;
+    background: #000;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    position: relative;
+    
+}
+main .view_btn .arrow_icon::before{
+    content: "";
+    border: 2px solid #000;    
+    border-left: transparent;
+    border-bottom: transparent;
+    transform: rotate(40deg);
+    width: 5px;
+    height: 5px;
+    display: block;
+    position: absolute;
+    top: -2.5px;
+    right: 0;
+}
+
+main .view_btn .bg_icon{
+    position: relative;
+    z-index: -1;
+}
+
+main .view_btn .bg_icon i{
+    width: 35px;
+    height: 22px;
+    background: #c1c4aa;
+    position: absolute;
+    top: -5px;
+    right: -20px;
+    display: block;
+    opacity: 0;
+    transition: opacity 2s;
+}
+main .view_btn .bg_icon i::before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 11px solid #c1c4aa;
+}
+main .view_btn .bg_icon i::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 11px solid #c1c4aa;
+    transform: rotate(180deg);
+}
+
+@keyframes iconRoll {
+    0%{
+        transform: rotateZ(0);
+        
+    }
+    100%{
+        transform: rotateZ(360deg);
+       
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* deps01 */
+
+main .deps01 {
+    margin: 200px 0;
+}
+
+main .deps01 article h3 {
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+}
+main .deps01 article h3 small {
+    display: block;
+    font-size: 20px;
+    color: #aaa;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+main .deps01 article .box_area {
+    max-width: 85%;
+    margin: 100px auto 0;
+}
+main .deps01 article .box_area ul {
+    display: flex;
+   
+    flex-wrap: wrap;
+}
+main .deps01 article .box_area ul li {
+    flex: 1 1 30%;
+    margin: 0 40px 120px 0;
+    
+} 
+main .deps01 article .box_area ul li .border_box{
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transition: border .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+main .deps01 article .box_area ul li:hover .border_box{
+    border: 35px solid #636a52;
+    opacity: 1;
+    visibility: visible;
+}
+main .deps01 article .box_area ul li:nth-child(3n){
+    margin-right: 0;
+}
+main .deps01 article .box_area ul li:nth-child(1){
+    margin-top: 150px;
+}
+
+main .deps01 article .box_area ul li:nth-child(2){
+    margin-top: 250px;
+}
+main .deps01 article .box_area ul li:nth-child(4){
+    margin-top: -130px;
+}
+main .deps01 article .box_area ul li:nth-child(6){
+    margin-top: -240px;
+}
+
+main .deps01 article .box_area ul li .thumb {
+    position: relative;
+}
+main .deps01 article .box_area ul li .thumb a {
+    display: block;
+}
+
+main .deps01 article .box_area ul li .subject a span {
+    display: block;
+    word-break: keep-all;
+} 
+main .deps01 article .box_area ul li .subject a span.top{
+    font-size: 26px;
+    font-weight: 800;
+    display: block;
+    margin: 20px 0 10px;
+}
+
+main .deps01 article .box_area ul li .subject a span.sub_txt{
+    font-size: 18px;
+    color: #888;
+    line-height: 1.5;
+}
+main .deps01 article .view_btn{
+    text-align: center;
+}
+
+
+/* deps02 */
+main .deps02 .campaign{
+    position: relative;
+    width: 90%;
+}
+
+main .deps02 h3{
+    font-size: 150px;
+    font-weight: 800;
+    margin: 0 0 100px 0;
+}
+
+main .deps02 .campaign .inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+    
+}
+main .deps02 .campaign .inner > h4{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1.1;
+    display: table-cell;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    padding: 0 20%;
+}
+
+main .deps02 .view_btn a.more{
+    color: #fff;
+}
+main .deps02 .view_btn .bg_icon{
+    z-index: 0;
+}
+main .deps02 .view_btn .arrow_icon{
+    background: #fff;
+    z-index: 1;
+}
+main .deps02 .view_btn .arrow_icon::before {
+    border:2px solid #fff;
+    border-left: transparent;
+    border-bottom: transparent;
+}
+
+
+/* deps03 */
+main .deps03 {
+    margin-top:-300px;
+    padding-top:500px;
+    background:#fff;
+    padding-bottom: 200px;
+}
+main .deps03 h3{
+    font-weight: 800;
+    font-size: 60px;
+    text-align:center;
+}
+main .deps03 h3 small{
+    display:block;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color:#aaa;
+    font-weight: 700;
+}
+
+main .deps03 h3 b{
+    display:block;   
+    font-size:25px;
+    line-height:1.7;
+    font-weight:800;
+    margin-top: 50px;
+}
+
+main .deps03 .svg_box{                                                                   
+    max-width: 85%;
+    margin: 100px auto 0;
+    
+}
+main .deps03 .svg_box ul{
+    overflow: hidden;
+    
+}
+
+main .deps03 .svg_box ul li{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    position: relative;
+}
+
+main .deps03 .svg_box ul li::after{
+    content:"";
+    display: block;
+    width: 1px;
+    height: 100%;
+    background: #d7d7d7;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+main .deps03 .svg_box ul li:last-child::after{
+    display: none;
+}
+main .deps03 .svg_box .txt h4{
+    font-size: 24px;
+    margin: 40px 0 30px;
+    font-weight: 800;
+}
+main .deps03 .svg_box .txt p{
+    font-size: 16px;
+    color: #666;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+main .deps03 .svg_box .view_btn{
+    text-align: center;
+    margin-top: 100px;
+}
+
+main .deps03 .view_btn .bg_icon{
+    z-index: 0;
+}
+main .deps03 .view_btn .arrow_icon{
+    z-index: 1;
+}
+
+main .deps03 .svg_box svg path{
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: stroke 5s linear forwards infinite;
+}
+main .deps03 .svg_box svg path.st1{
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation: stroke1 5s linear forwards infinite;  
+    
+}
+main .deps03 .svg_box svg path.st2{
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: stroke2 5s linear forwards infinite;  
+    
+}
+
+@keyframes stroke {
+   from  {
+    stroke-dashoffset: 1000px;
+    }
+    to {
+        stroke-dashoffset: 0px;
+    }
+}
+@keyframes stroke1 {
+    0%  {
+     stroke-dashoffset: 2000px;
+     }
+     50% {
+         stroke-dashoffset: 1000px;
+     }
+     100% {
+        stroke-dashoffset: 0px;
+    }
+ }
+@keyframes stroke2 {
+    from  {
+     stroke-dashoffset: 100px;
+     }
+     to {
+         stroke-dashoffset: 0px;
+     }
+ }
+
+/* deps04 */
+main .deps04{
+    background: #fff;
+    
+}
+main .deps04 .miele{
+    position: relative;
+    max-width: 90%;
+    z-index: 1;
+}
+main .deps04 .miele .inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+main .deps04 h3{
+    font-weight: 800;
+    font-size: 50px;   
+    color: #fff;
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    padding: 0 20%;
+}
+
+main .deps04 h3 small{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: 600;
+    opacity: .5;
+}
+
+main .deps04 h3 b{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+main .deps04 .view_btn a.more{
+    color: #fff;
+}
+main .deps04 .view_btn .arrow_icon{
+    z-index: 1;
+    background: #fff;
+}
+main .deps04 .view_btn .bg_icon{
+    z-index: 0;
+
+}
+
+main .deps04 .view_btn .arrow_icon::before{
+   border: 2px solid #fff;
+    border-left: transparent;
+    border-bottom: transparent;
+}
+
+
+/* deps05 */
+main .deps05{
+    position: relative;
+    margin-top: -200px;
+}
+main .deps05 .inner{
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+    
+}
+main .deps05 .contact{    
+    padding: 400px 15% 200px;
+    display: table;
+}
+main .deps05 .img_b{
+    display: table-cell;
+    position: relative;
+    z-index: 1;
+    width: 50%;
+}
+main .deps05 .contact::after{
+    content:"";
+    display: block;
+    width: 40%;
+    height: 100%;
+    background: #636a52;
+    position: absolute;
+    right: 0;
+    top: 0;
+   
+}
+
+main .deps05 .contact h3{
+    font-weight: 800;
+    font-size: 60px;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+main .deps05 .contact h3 small{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #aaa;
+    font-weight: 700;
+}
+main .deps05 .contact h3 b{
+    display: block;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.7;
+    font-weight: 500;
+    margin-top: 15px;
+
+}
+
+/* deps06 */
+main .deps06{
+    background: #222;
+}
+
+
+main .deps06 .contact{
+    padding: 200px 15% 180px;
+}
+
+
+main .deps06 .contact h3{
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 50px;
+    font-weight: 800;
+}
+
+main .deps06 .contact ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+main .deps06 .contact ul li{
+    flex-basis: 22%;
+
+    margin-right: 3%;
+    position: relative;
+    margin-bottom: 3%;
+    
+}
+main .deps06 .contact ul li a{
+    display: block;
+    position: relative;
+    
+}
+
+main .deps06 .contact ul li a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;    
+    background: #000;
+    background: url("/img/insta.svg")no-repeat 90% 10%;
+    background-size: 25px auto;
+    opacity: 0;
+    transition: opacity .5s;
+}
+main .deps06 .contact ul li a img{
+    opacity: .5;
+}
+main .deps06 .contact ul li a:hover::after,
+main .deps06 .contact ul li a:hover .hover_line,
+main .deps06 .contact ul li a:hover span.txt_line{
+    opacity: 1;
+}
+main .deps06 .contact ul li .hover_line{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   background: rgba(0,0,0,.5) ;
+    display: flex;
+    color: #fff;
+    align-items: flex-end;
+   
+    
+    line-height: 1.5;
+    opacity: 0;
+    transition: opacity .5s;   
+}
+main .deps06 .contact ul li:nth-child(4n){
+    margin-right: 0;
+}
+
+main .deps06 .contact ul li span.txt_line{
+    height: 75x;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    word-break: break-word;    
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    line-height: 1.7;
+    color: #fff;
+    z-index: 1;
+    opacity: 0;
+    margin: 30px;
+    box-sizing: border-box;
+    font-size: 15px;
+}

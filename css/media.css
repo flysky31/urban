@@ -1,0 +1,522 @@
+
+/* **************************************** *
+ * 1024px
+ * **************************************** */
+@media screen and (max-width:1024px){
+    /* header */
+    .header .header_inner{
+        max-width: 90%;
+    }
+    .header .header_inner .sign{
+        visibility: hidden;
+    }
+    .header .header_inner .logo a{
+        font-size: 15px;
+        width: 190px;
+        margin: 0 auto;
+        font-weight: 400;
+    }
+    .header .header_inner .logo a img{
+        width: 21px;
+    }
+    .header .header_inner .menu_box .menu span{
+        height: 2px;
+    }
+    .header .header_inner .menu_box .menu span:nth-child(1),
+    .header .header_inner .menu_box .menu span:nth-child(2){
+        margin-bottom: 9px;
+    }
+
+    /* title */
+    .title{
+        height: 100%;
+    }
+    .title::before{
+        width: 100%;
+    }
+    .title .title_inner{
+        width: 100%;
+        padding-top: 150px;
+        max-width: 90%;
+
+    }
+    .title .title_inner .txt p a{
+        font-size:12px;
+    }
+    .title .upper{
+        display: none;
+    }
+    .title .scroll{        
+        bottom: 6%;
+        right: 9%;
+    }
+    .title .title_inner .video_box{
+        position: inherit;
+        top: 0;
+        right: 0;
+        width: 955px;
+        height: 545px;
+    }
+    .title .title_inner .txt{
+        position: inherit;
+        top: 0;
+        left: 0;
+        padding: 50px 0 100px;
+    }
+
+    /* more 공통 */
+    main .view_btn a.more{
+        font-size:12px;
+    }
+    /* scroll */
+    .title .scroll a{
+        font-size: 0;
+    }
+    .title .scroll a span{
+        border-color: #fff;
+    }
+
+    .title .title_inner .txt h2{
+        font-size: 40px;
+    }
+    .title .title_inner .txt p{
+        font-size: 17px;
+        margin: 15px 0 20px 0;
+    }
+
+    /* content  deps01 */
+    main .deps01{
+        margin: 150px 0;
+    }
+    main .deps01 article h3{
+        font-size: 40px;
+    }
+    main .deps01 article h3 small{
+        font-size: 17px;
+    }
+    main .deps01 article .box_area ul li:nth-child(1),
+    main .deps01 article .box_area ul li:nth-child(2),
+    main .deps01 article .box_area ul li:nth-child(4),
+    main .deps01 article .box_area ul li:nth-child(6){
+        margin-top: 0;
+    }
+    main .deps01 article .box_area{
+       
+        margin: 70px auto 0;
+        padding-left: 5%;
+        max-width: 100%;
+    }
+    
+    main .deps01 article .box_area ul{
+        
+        width: 400%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+   
+    }
+    main .deps01 article .box_area ul li{
+        flex: none;
+        flex-basis: 11.5%;
+        margin: 0 20px 60px 0;
+    }
+    main .deps01 article .box_area ul li:nth-child(3n){
+        margin-right: 1%;
+    }
+    main .deps01 article .box_area ul li .subject a span.top{
+        font-size: 22px;
+    }
+    main .deps01 article .box_area ul li .subject a span.sub_txt{
+        font-size: 16px;
+    }
+
+    /* content  deps02 */
+    main .deps02 h3{
+        font-size: 80px;
+        margin: 0 0 50px 0;
+    }
+    main .deps02 .campaign{
+        width: 100%;
+    }
+    main .deps02 .campaign .inner{
+        position: inherit;
+    }
+    main .deps03{
+        margin-top: 0;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    main .deps02 .campaign .inner > h4{
+        padding: 50px 50px 100px;
+        color: #000;
+        font-size: 40px;
+    }
+    main .deps02 .campaign .inner > h4 >br{
+        display: none;
+    }
+    main .deps02 .view_btn a.more{
+        color: #000;
+        font-size: 12px;
+    }
+    main .deps02 .view_btn .arrow_icon{
+        background: #000;
+    }
+    main .deps02 .view_btn .arrow_icon::before{
+        border-color: #000;
+    }
+
+    /* content  deps03 */
+    main .deps03 h3 small{
+        font-size: 17px;
+    }
+    main .deps03 h3{
+        font-size: 40px;
+    }
+
+    main .deps03 h3 b{
+        font-size: 22px;
+        line-height: 1.5;
+        margin-top: 30px;
+    }
+
+    main .deps03 .svg_box .view_btn{
+        margin-top: 50px;
+    }
+
+    /* content  deps04 */
+    main .deps04 .miele{
+        max-width: 100%;
+    }
+    main .deps04 .miele .inner{
+        position: inherit;
+        padding: 50px 50px 100px;
+        font-size: 40px;
+        width: auto;
+        display: block;
+    }
+    main .deps04 h3{
+        color: #000;
+        padding: 0;
+        display: block;
+        text-align: center;
+        font-size: 40px;
+    }
+    main .deps04 h3 small{
+        color: #000;
+        font-size: 17px;
+    }
+    main .deps04{
+        background: transparent;
+    }
+    main .deps04 .view_btn a.more{
+        color: #000;
+    }
+    main .deps04 .view_btn .arrow_icon{
+        background: #000;
+    }
+    main .deps04 .view_btn .arrow_icon::before{
+        border-color: #000;
+    }
+
+    /* content  deps05 */
+    main .deps05{
+        margin-top: 0;
+    }
+    main .deps05 .contact::after{
+        width: 100%;
+        height: 300px;
+    }
+    main .deps05 .contact{
+        display: block;
+        position: relative;
+        padding: 0;
+    }
+    main .deps05 .inner{
+        width: 100%;
+        display: block;
+    }
+
+    main .deps05 .contact h3{
+        display: block;
+        padding: 73% 0 150px;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    main .deps05 .img_b{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,0%);
+        display: block;
+        padding-top: 13%;
+        width: 45%;
+    }
+
+    main .deps05 .contact h3 small{
+        font-size: 17px;
+    }
+  
+    main .deps05 .contact h3 > br{
+        display: none;
+    }
+
+    main .deps05 .contact h3 b > br + br{
+        display: none;
+    }
+
+    /* content  deps06 */
+    main .deps06 .contact{
+        padding: 100px 0;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    main .deps06 .contact h3{
+        font-size: 40px;
+        margin-bottom: 35px;
+    }
+    main .deps06 .contact ul li{
+        flex-basis: 23%;
+    margin-right: 2%;
+    }
+
+    /* shop */
+    .shop.stiky{
+        right: 5px;
+    }
+}
+
+
+/* **************************************** *
+ * 768px
+ * **************************************** */
+@media screen and (max-width:768px){
+
+    .bg_area{
+        background-size: 43%;
+    }
+
+    /* header */
+    .header.stiky{
+        height: 70px;
+    }
+    .header.stiky .header_inner .logo a img[alt="로고블랙"]{
+        width: 28px;
+    }
+    .header .header_inner{
+        height: 75px;
+        padding-bottom: 35px;
+        max-width: 92%;
+    }
+    .title .title_inner{
+        padding-top: 110px;
+        max-width: 92%;
+    }
+    .title .title_inner .video_box{
+        width: 720px;
+        height: 415px;
+    }
+    .header .header_inner .logo{
+        
+    }
+    .header .header_inner .logo a{
+        font-size: 14px;
+        width: 178px;
+    }
+    .header .header_inner .logo a img{
+        width: 17px;
+    }
+    .header .header_inner .menu_box .menu span{
+        width: 25px;
+    }
+    .header .header_inner .menu_box .menu span:nth-child(1), 
+    .header .header_inner .menu_box .menu span:nth-child(2){
+        margin-bottom: 8px;
+    }
+
+
+    /* title */
+    .title .title_inner .txt h2{
+        font-size: 30px;
+    }
+    .title .title_inner .txt p{
+        font-size: 16px;
+    }
+    .title .title_inner .txt p a .arrow_icon{
+        width: 30px;
+        margin-left: 7px;
+    }
+
+    /* content  deps01 */
+    main .deps01{
+        margin: 100px 0;
+    }
+    main .deps01 article h3{
+        font-size: 30px;
+    }
+    main .deps01 article h3 small{
+        font-size: 16px;
+    }
+    main .deps01 article .box_area ul li .subject a span.top{
+        font-size: 20px;
+    }
+    main .deps01 article .box_area ul li .subject a span.top{
+        font-size: 20px;
+    }
+    main .deps01 article .box_area ul li .subject a span.sub_txt{
+        font-size: 14px;
+    }
+     /* content  deps02 */
+    main .deps02 h3{
+        font-size: 65px;
+    }
+    main .deps02 .campaign .inner > h4{
+        font-size: 30px;
+        padding: 50px 30px 100px;
+    }
+    /* content  deps03 */
+    main .deps03 h3{
+        font-size: 30px;
+    }
+    main .deps03 h3 small{
+        font-size: 16px;
+    }
+    main .deps03 h3 b{
+        font-size: 19px;
+        margin-top: 20px;
+    }
+    main .deps03 .svg_box{
+        margin: 50px auto 0;
+    }
+    main .deps03 .svg_box ul li{
+        float: none;
+        width: 100%;
+        margin-bottom: 13%;
+    }
+    main .deps03 .svg_box .txt h4{
+        font-size: 22px;
+        margin: 30px 0 20px;
+        font-weight: 700;
+    }
+    main .deps03 .svg_box .txt p{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    main .deps03 .svg_box ul li:last-child{
+        margin-bottom: 0;
+    }
+    main .deps03 .svg_box ul li::after{
+        width: 0;
+    }
+    main .deps03 .svg_box .view_btn{
+        margin-top: 0;
+    }
+
+    /* content  deps04 */
+    main .deps04 h3{
+        font-size: 30px;
+    }
+    main .deps04 h3 small{
+        font-size: 16px;
+    }
+
+    /* content  deps05 */
+    main .deps05 .img_b{
+        width: 72%;
+        padding-top: 10%;
+    }
+
+    main .deps05 .contact h3{
+        padding: 100% 0 100px;
+        font-size: 30px;
+    }
+    main .deps05 .contact h3 small{
+        font-size: 16px;
+    }
+    
+    /* content  deps06 */
+    main .deps06 .contact{
+        max-width: 93%;
+    }
+    main .deps06 .contact h3{
+        font-size: 30px;
+    }
+
+
+    /* scroll */
+    .title .scroll{
+        right: 6%;
+    }
+
+    /* footer */
+    footer .footer_inner{
+        padding: 60px 30px;
+    }
+
+    footer .footer_inner .agree{
+        border:0;
+        padding: 0;
+    }
+    footer .footer_inner .agree .sns{
+        margin: 30px 0 0;
+    }
+    footer .footer_inner .agree ul{
+        width: 100%;
+        float: none;
+    }
+    footer .footer_inner .sns{
+        position:inherit;
+        top: 0;
+        right: 0;
+    }
+    footer .footer_inner .sns a{
+        width: 25px;
+        margin-right: 13px;
+    }
+    footer .footer_inner .sns a img.face{
+        width: 20px;
+    }
+    footer .footer_inner .sns a img.blog{
+        width: 22px;
+    }
+    
+    footer .footer_inner .email{
+        float: none;
+        border-top: 1px solid rgba(233, 233, 233, .3);
+        margin-top: 35px;
+        padding-top: 35px;
+    }
+    footer .footer_inner .copyrignt p:first-child > span:first-child{
+        display: block;
+    }
+
+    footer .footer_inner ul li a,
+    footer .footer_inner .copyrignt{
+        font-size: 13px;    
+    }
+    footer .footer_inner h2 b{
+        font-size: 35px;
+    }
+    footer .footer_inner .agree ul li{
+        margin-right: 20px;
+    }
+    
+}
+
+
+/* **************************************** *
+ * 540px
+ * **************************************** */
+ @media screen and (max-width: 540px){
+    
+    /* title */
+    .title .title_inner .video_box{
+        width: 503px;
+        height: 292px;
+    }
+
+
+    /* content  deps01 */
+    main .deps01 article .box_area ul li{
+        flex-basis: 12%;
+    }
+ }

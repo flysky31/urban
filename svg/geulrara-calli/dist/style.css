@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #fff;
+}
+
+#LIRIKOS-1,
+#LIRIKOS-2,
+#LIRIKOS-3,
+#LIRIKOS-4,
+#LIRIKOS-5,
+#LIRIKOS-6,
+#LIRIKOS-7 {
+  fill: none;
+  stroke: #5b69e7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+
+#LIRIKOS-1 {
+  stroke-width: 34;
+  -webkit-animation: hand-writing 1s linear forwards 0.1s;
+          animation: hand-writing 1s linear forwards 0.1s;
+}
+
+#LIRIKOS-2 {
+  stroke-width: 34;
+  -webkit-animation: hand-writing 1s linear forwards 1s;
+          animation: hand-writing 1s linear forwards 1s;
+}
+
+#LIRIKOS-3 {
+  stroke-width: 31;
+  -webkit-animation: hand-writing 1s linear forwards 2s;
+          animation: hand-writing 1s linear forwards 2s;
+}
+
+#LIRIKOS-4 {
+  stroke-width: 31;
+  -webkit-animation: hand-writing 1s linear forwards 3s;
+          animation: hand-writing 1s linear forwards 3s;
+}
+
+#LIRIKOS-5 {
+  stroke-width: 31;
+  -webkit-animation: hand-writing 1s linear forwards 4s;
+          animation: hand-writing 1s linear forwards 4s;
+}
+
+#LIRIKOS-6 {
+  stroke-width: 31;
+  -webkit-animation: hand-writing 1s linear forwards 5s;
+          animation: hand-writing 1s linear forwards 5s;
+}
+
+#LIRIKOS-7 {
+  stroke-width: 31;
+  -webkit-animation: hand-writing 1s linear forwards 6s;
+          animation: hand-writing 1s linear forwards 6s;
+}
+
+#calli-path-1,
+#calli-path-2,
+#calli-path-3,
+#calli-path-4,
+#calli-path-5 {
+  fill: none;
+  stroke: #5b69e7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+
+#calli-path-1 {
+  stroke-width: 2;
+  -webkit-animation: hand-writing 0.45s linear forwards 1.8s;
+          animation: hand-writing 0.45s linear forwards 1.8s;
+}
+
+#calli-path-2 {
+  stroke-width: 2;
+  -webkit-animation: hand-writing 0.45s linear forwards 1.9s;
+          animation: hand-writing 0.45s linear forwards 1.9s;
+}
+
+#calli-path-3 {
+  stroke-width: 2;
+  -webkit-animation: hand-writing 0.45s linear forwards 1.9s;
+          animation: hand-writing 0.45s linear forwards 1.9s;
+}
+
+#calli-path-4 {
+  stroke-width: 2;
+  -webkit-animation: hand-writing 0.45s linear forwards 2s;
+          animation: hand-writing 0.45s linear forwards 2s;
+}
+
+#calli-path-5 {
+  stroke-width: 2;
+  -webkit-animation: hand-writing 0.45s linear forwards 2.1s;
+          animation: hand-writing 0.45s linear forwards 2.1s;
+}
+
+#heart-path {
+  fill: none;
+  stroke: #5b69e7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1000;
+  stroke-dashoffset:1000;
+  stroke-width: 10;
+  -webkit-animation: hand-writing 5.8s linear forwards 2.3s;
+          animation: hand-writing 5.8s linear forwards 2.3s;
+}
+
+@-webkit-keyframes hand-writing {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes hand-writing {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}

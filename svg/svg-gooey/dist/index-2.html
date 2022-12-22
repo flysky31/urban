@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - SVG 필터를 사용한 구이(Gooey) 효과 - 각진 모서리의 경우</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <style>
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    }
+
+    .blobs {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: url("#gooey");
+    }
+
+    .blob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+    width: 80px;
+    height: 80px;
+    background: #d9c738;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    }
+    .blob:nth-child(1) {
+    -webkit-animation: blob-left-anim 7s 0s cubic-bezier(0.77, 0, 0.175, 1) infinite alternate;
+            animation: blob-left-anim 7s 0s cubic-bezier(0.77, 0, 0.175, 1) infinite alternate;
+    }
+    .blob:nth-child(3) {
+    -webkit-animation: blob-right-anim 7s 0s cubic-bezier(0.77, 0, 0.175, 1) infinite alternate;
+            animation: blob-right-anim 7s 0s cubic-bezier(0.77, 0, 0.175, 1) infinite alternate;
+    }
+
+    @-webkit-keyframes blob-left-anim {
+    0% {
+      transform: scale(1, 1) translateX(0)  rotate(0deg);
+    }
+    50% {
+      transform: scale(1.6, 2) translateX(-40px) rotate(90deg);
+    }
+    100% {
+      transform: scale(0.9, 0.9) translateX(-0px);
+    }
+    }
+
+    @keyframes blob-left-anim {
+    0% {
+      transform: scale(1, 1) translateX(0)  rotate(0deg);
+    }
+    50% {
+      transform: scale(1.6, 2) translateX(-40px)  rotate(90deg);
+    }
+    100% {
+      transform: scale(0.9, 0.9) translateX(-0px);
+    }
+    }
+    @-webkit-keyframes blob-right-anim {
+    0% {
+      transform: scale(1, 1) translateX(0)  rotate(0);
+    }
+    80% {
+      transform: scale(0.9, 0.9) translateX(20px)  rotate(90deg);
+    }
+    100% {
+      transform: scale(0.9, 0.9) translateX(20px)  rotate(0);
+    }
+    }
+    @keyframes blob-right-anim {
+    0% {
+      transform: scale(1, 1) translateX(0) rotate(0);
+    }
+    80% {
+      transform: scale(0.9, 0.9) translateX(20px) rotate(90deg);
+    }
+    100% {
+      transform: scale(0.9, 0.9) translateX(20px)  rotate(0);
+    }
+    }
+
+  </style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="blobs">
+  <a href="">discover more</a>
+  <div class="blob">A</div>
+  <div class="blob">B</div>
+  <div class="blob">C</div>
+</div>
+<!-- --------------------------------------------------------->
+<!-- SVG 필터 : Gooey -->
+<!-- --------------------------------------------------------->
+<!-- Gooey 필터 - 컬러 매트릭스 값-->
+<!-- --------------------------->
+<!--    | R | G | B | A  | +-->
+<!-- ---|----------------------->
+<!--  R | 1 | 0 | 0 |  0 |  0-->
+<!-- ---|----------------------->
+<!--  G | 0 | 1 | 0 |  0 |  0-->
+<!-- ---|----------------------->
+<!--  B | 0 | 0 | 1 |  0 |  0-->
+<!-- ---|----------------------->
+<!--  A | 0 | 0 | 0 | 18 | -7-->
+<!-- ---|----------------------->
+<svg>
+  <filter id="gooey">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="gooey"></feColorMatrix>
+    <feComposite in="SourceGraphic" in2="gooey" operator="atop"></feComposite>
+    <!-- feBlend(-->
+    <!--   in="SourceGraphic"-->
+    <!--   in2="gooey"-->
+    <!-- )-->
+  </filter>
+</svg>
+<!-- partial -->
+
+</body>
+</html>

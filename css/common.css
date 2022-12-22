@@ -1,0 +1,17 @@
+.hidden{
+    display: none;
+}
+
+.clearfix{
+    display: block;
+    clear: both;
+}
+
+main .title{
+    font-size: 40px;
+    letter-spacing: -1.5px;
+    text-align: center;
+    padding-bottom:50px;
+    font-weight: bold;
+}
+

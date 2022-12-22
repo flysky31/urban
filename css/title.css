@@ -1,0 +1,245 @@
+.title {
+    /* position: relative;
+    width: 100%;
+    height: 900px; */
+
+    height: 100%;
+    background-color: #eee;
+    min-height: 480px;
+    height: 850px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.title::before{
+    content:"";
+    display: block;
+    background: #000;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 80%;
+    height: 100%;
+}
+.title .title_inner {
+    width: 100%;
+    max-width: 85%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    height: 100%;
+}
+
+.title .title_inner .txt{
+    position:absolute;
+    top:50%;
+    color: #fff;
+    z-index: 1;
+    
+}
+.title .title_inner .txt a{
+    color: #fff;
+}
+
+.title .title_inner .txt h2{
+    font-size: 55px;
+    font-weight: 800;
+    overflow: hidden;
+}
+.title .title_inner .txt h2 span{
+    display: block;
+    animation-name: h2up;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+    animation-timing-function: ease-out;
+}
+
+@keyframes h2up{
+    0%{
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100%{
+      transform: translateY(100%);
+      opacity: 0.4;
+    }
+  }
+
+
+.title .title_inner .txt p{
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 15px 0 30px 0;
+}
+.title .title_inner .txt p a{
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .3px;
+    line-height: .5;
+    position: relative;
+}
+.title .title_inner .txt p a .arrow_icon{
+    width: 33px;
+    height: 2px;
+    background: #fff;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    position: relative;
+}
+.title .title_inner .txt p a .arrow_icon::before{
+    content:"";
+    border: 2px solid #fff;
+    border-left: transparent;
+    border-bottom: transparent;
+    transform: rotate(40deg);
+    width: 5px;
+    height: 5px;
+    display: block;
+    position: absolute;
+    top: -2.5px;
+    right: 0;
+}
+.title .title_inner .txt p a .bg_icon{
+    position: relative;
+    z-index: -1;
+}
+
+.title .title_inner .txt p a .bg_icon i{
+    width: 35px;
+    height: 22px;
+    background: #c1c4aa;
+    position: absolute;
+    top: -5px;
+    right: -20px;
+    display: block;
+    opacity: 0;
+    transition: opacity 2s;
+    
+}
+.title .title_inner .txt p a.more:hover .bg_icon i{    
+    animation: iconRoll 4s linear infinite;
+    opacity: 1;
+}
+.title .title_inner .txt p a .bg_icon i::before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 11px solid #c1c4aa;
+}
+
+@keyframes iconRoll {
+    0%{
+        transform: rotateZ(0);       
+    }
+    50%{
+        transform: rotateZ(180deg);        
+    }
+    100%{
+        transform: rotateZ(360deg);
+        
+    }
+}
+.title .title_inner .txt p a .bg_icon i:after{
+    content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 18px solid transparent;
+      border-right: 18px solid transparent;
+      border-bottom: 11px solid #c1c4aa;
+      transform: rotate(180deg);
+}
+.title .title_inner .video_box{
+    position: absolute;
+    bottom: -5px;
+    right: 2%;
+    width: 1188px;
+    height: 678px;
+    overflow: hidden;
+}
+
+
+.title .title_inner .video_box iframe{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.title .upper{
+    position: absolute;
+    top: 50%;
+    right:4.5%;
+}
+.title .upper a{
+    display: block;
+    writing-mode: tb-rl;
+    font-size: 12px;
+    font-weight: 600;
+    color: #aaa;
+    transition: color 1s;
+
+}
+.title .upper a:hover{
+    color: #000;
+}
+.title .scroll{
+    position: absolute;
+    bottom: 10%;
+    right: 4%;
+}
+.title .scroll a{
+    display: block;
+    font-size: 10px;
+    font-weight: 800;
+    
+}
+
+.title .scroll a span{
+    border: 2px solid #000;
+    display: block;
+    width: 3px;
+    height: 3px;
+    border-left: transparent;
+    border-bottom: transparent;
+    transform:rotate(130deg);
+    margin: 0 auto;
+    margin-bottom: 8px;    
+    animation: roll 2s 3s linear infinite;
+    
+}
+.title .scroll a span:nth-child(1){
+    margin-bottom: 5px;
+    
+}
+.title .scroll a span:nth-child(2){
+    animation: roll 3s 3s linear infinite;
+    
+}
+@keyframes roll {   
+    0%{
+        opacity: 0;
+      }
+      10%{
+        opacity: 0;
+      }
+       20%{
+        opacity: 1;
+      }
+      100%{
+        opacity: 0;
+      }
+}
+
+
